@@ -1,4 +1,5 @@
 # .bashrc
+# shellcheck disable=SC1090
 # shellcheck disable=SC2148
 
 # Measure the processing time for startup

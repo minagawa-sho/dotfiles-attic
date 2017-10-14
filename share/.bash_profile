@@ -1,4 +1,5 @@
 # .bash_profile
+# shellcheck disable=SC1090
 # shellcheck disable=SC2148
 
 if [ -f $HOME/.bashrc ]; then
