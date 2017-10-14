@@ -3,14 +3,14 @@ start_time="`gdate +%s`"
 
 # Save original PATH
 if test "x$ORIGPATH_SAVED" != "xyes"; then
-        export ORIGPATH=$PATH
-        export ORIGPATH_SAVED="yes"
+	export ORIGPATH=$PATH
+	export ORIGPATH_SAVED="yes"
 fi
 export PATH=$ORIGPATH
 
 # Run the system startup
 if [ -f /etc/bashrc ]; then
-        . /etc/bashrc
+	. /etc/bashrc
 fi
 
 # Run the startup script
