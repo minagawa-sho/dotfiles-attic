@@ -1,3 +1,6 @@
+# .bashrc
+# shellcheck disable=SC2148
+
 # Measure the processing time for startup
 start_time="`gdate +%s`"
 
@@ -14,7 +17,7 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # Run the startup script
-$HOME/.dotfiles/bin/startup.sh
+. $HOME/.dotfiles/libexec/startup.sh
 
 # Measure the processing time for startup
 finish_time=`gdate +%s.%N`
