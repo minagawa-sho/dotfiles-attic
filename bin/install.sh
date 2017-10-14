@@ -18,6 +18,7 @@ cd dotfiles-attic-master
 # TODO: impl more
 userid=`id -u`
 groupid=`id -g`
+install -m 0644 -o $userid -g $groupid .bash_profile $HOME/.bash_profile
 install -m 0644 -o $userid -g $groupid .bashrc $HOME/.bashrc
 
 # Place ~/.dotfiles symlink to the working directory symlink
