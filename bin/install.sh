@@ -1,26 +1,26 @@
 #!/bin/sh
-# shellcheck disable=SC1090
 
 set -e
 
 # Define constants
-dotfiles_path="$HOME/.dotfiles"
-dotfiles_config="$HOME/.dotfilesrc"
+work_dirpath="/tmp"
 dotfiles_zipurl='https://codeload.github.com/minagoro/dotfiles-attic/zip/master'
-
-# Load envs as dotfiles config
-. $dotfiles_config
+dotfiles_proj='github.com/minagoro/dotfiles-attic'
+dotfiles_path="$HOME/.dotfiles"
 
 # Install dotfiles as ~/.dotfiles
-curl -LsS $dotfiles_zipurl > $HOME/dotfiles-attic-master.zip
-unzip $HOME/dotfiles-attic-master.zip -d $HOME
-mv $HOME/dotfiles-attic-master $dotfiles_path
+cd $work_dirpath
+curl -LsS $dotfiles_zipurl > dotfiles-attic-master.zip
+unzip dotfiles-attic-master.zip
+cd dotfiles-attic-master
 
 # Install all apps and config files
-# TODO: impl
+# TODO: impl more
+userid=`id -u`
+groupid=`id -g`
+install -m 0644 -o $userid -g $groupid .bashrc $HOME/.bashrc
 
-# Replace ~/.dotfiles to the working directory symlink
-ghq list | grep $DOTFIELSPROJ || ghq get $DOTFILESPROJ
-rm -rf $dotfiles_path
-dotfilesdir=`ghq list --exact --full-path $DOTFILESPROJ`
+# Place ~/.dotfiles symlink to the working directory symlink
+ghq list | grep $dotfiles_proj || ghq get $dotfiles_proj
+dotfilesdir=`ghq list --exact --full-path $dotfiles_proj`
 ln -snf $dotfilesdir $dotfiles_path
