@@ -1,7 +1,14 @@
 # Measure the processing time for startup
 start_time="`gdate +%s`"
 
-# Source the system definition
+# Save original PATH
+if test "x$ORIGPATH_SAVED" != "xyes"; then
+        export ORIGPATH=$PATH
+        export ORIGPATH_SAVED="yes"
+fi
+export PATH=$ORIGPATH
+
+# Run the system startup
 if [ -f /etc/bashrc ]; then
         . /etc/bashrc
 fi
