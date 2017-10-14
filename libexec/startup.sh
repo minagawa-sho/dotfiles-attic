@@ -7,6 +7,7 @@ export DOTFILESPATH="$HOME/.dotfiles"
 . $DOTFILESPATH/lib/bashcompletion_startup.sh
 . $DOTFILESPATH/lib/blueprints_startup.sh
 . $DOTFILESPATH/lib/builtin_startup.sh
+. $DOTFILESPATH/lib/df_startup.sh
 . $DOTFILESPATH/lib/fzf_startup.sh
 . $DOTFILESPATH/lib/ghq_startup.sh
 . $DOTFILESPATH/lib/go_startup.sh
