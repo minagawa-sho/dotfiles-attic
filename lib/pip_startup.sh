@@ -1,4 +1,4 @@
-# pip.sh
+# pip_startup.sh
 # shellcheck disable=SC2148
 
 # Load bash completion for pip

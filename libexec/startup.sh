@@ -4,4 +4,6 @@
 
 export DOTFILESPATH="$HOME/.dotfiles"
 
+# Python development
 . $DOTFILESPATH/lib/pip_startup.sh
+. $DOTFILESPATH/lib/pyenv_startup.sh
