@@ -1,4 +1,4 @@
-# less_startup.sh
+# ls_startup.sh
 # shellcheck disable=SC2148
 
 # Alias for abbrebiations

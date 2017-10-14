@@ -1,4 +1,4 @@
-# system_startup.sh
+# blueprints_startup.sh
 # shellcheck disable=SC2148
 
 # Path generation is depending on ghq

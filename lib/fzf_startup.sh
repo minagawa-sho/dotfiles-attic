@@ -1,4 +1,4 @@
-# pip_startup.sh
+# fzf_startup.sh
 # shellcheck disable=SC1090
 # shellcheck disable=SC2148
 

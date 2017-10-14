@@ -1,4 +1,4 @@
-# system_startup.sh
+# builtin_startup.sh
 # shellcheck disable=SC2148
 
 # Dump core file on process crash
