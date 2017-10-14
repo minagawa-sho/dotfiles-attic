@@ -1,5 +1,4 @@
+# startup.sh
 # shellcheck disable=SC2148
 
-set -e
-
-echo "Hello, World !"
+export DOTFILESPATH="$HOME/.dotfiles"
