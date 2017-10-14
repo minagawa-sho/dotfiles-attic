@@ -15,11 +15,7 @@ unzip dotfiles-attic-master.zip
 cd dotfiles-attic-master
 
 # Install all apps and config files
-# TODO: impl more
-userid=`id -u`
-groupid=`id -g`
-install -m 0644 -o $userid -g $groupid .bash_profile $HOME/.bash_profile
-install -m 0644 -o $userid -g $groupid .bashrc $HOME/.bashrc
+. lib/bash_install.sh
 
 # Place ~/.dotfiles symlink to the working directory symlink
 ghq list | grep $dotfiles_proj || ghq get $dotfiles_proj
