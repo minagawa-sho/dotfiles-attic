@@ -6,6 +6,7 @@ export DOTFILESPATH="$HOME/.dotfiles"
 
 # Python development
 . $DOTFILESPATH/lib/blueprints_startup.sh
+. $DOTFILESPATH/lib/builtin_startup.sh
 . $DOTFILESPATH/lib/fzf_startup.sh
 . $DOTFILESPATH/lib/ghq_startup.sh
 . $DOTFILESPATH/lib/go_startup.sh
