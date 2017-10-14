@@ -1,4 +1,4 @@
-# .ghq_profile
+# ghq_startup.sh
 # shellcheck disable=SC1090
 # shellcheck disable=SC2148
 
