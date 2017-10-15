@@ -10,9 +10,9 @@ dotfiles_path="$HOME/.dotfiles"
 
 # Install dotfiles as ~/.dotfiles
 cd $work_dirpath
+rm -rf dotfiles-attic-master.zip dotfiles-attic-master
 curl -LsS $dotfiles_zipurl > dotfiles-attic-master.zip
 unzip dotfiles-attic-master.zip
-rm -rf dotfiles-attic-master
 cd dotfiles-attic-master
 
 # Install all apps and config files
