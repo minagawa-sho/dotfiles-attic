@@ -20,6 +20,7 @@ cd dotfiles-attic-master
 . lib/git_install.sh
 . lib/go_install.sh
 . lib/homebrew_install.sh
+. lib/wget_install.sh
 
 # Place ~/.dotfiles symlink to the working directory symlink
 ghq list | grep $dotfiles_proj || ghq get $dotfiles_proj
