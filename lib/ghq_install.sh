@@ -3,7 +3,7 @@
 # shellcheck disable=SC2148
 
 # Require Go platform
-. ./go_install.sh
+. lib/go_install.sh
 
 # Download the source, build, and install app
 go get github.com/motemen/ghq

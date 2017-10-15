@@ -2,7 +2,7 @@
 # shellcheck disable=SC2148
 
 # Require Homebrew
-. ./homebrew_install.sh
+. lib/homebrew_install.sh
 
 # Install app
 which git || brew install git

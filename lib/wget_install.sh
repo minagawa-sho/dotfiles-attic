@@ -2,7 +2,7 @@
 # shellcheck disable=SC2148
 
 # Require brew
-. ./brew_install.sh
+. lib/brew_install.sh
 
 # Install app
 which wget || brew install wget

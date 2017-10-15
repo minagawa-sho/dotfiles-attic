@@ -2,7 +2,7 @@
 # shellcheck disable=SC2148
 
 # Require wget
-. ./wget_install.sh
+. lib/wget_install.sh
 
 # Install app on GUI
 if which go; then
