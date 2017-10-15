@@ -1,8 +1,9 @@
 # blueprints_startup.sh
+# shellcheck disable=SC1090
 # shellcheck disable=SC2148
 
-# Path generation depends on ghq
-. ./ghq_startup.sh
+# Require ghq
+. $DOTFILESPATH/lib/ghq_startup.sh
 
 # Load BLUEPRINTSPATH path
 export BLUEPRINTSPATH

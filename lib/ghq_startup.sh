@@ -2,6 +2,9 @@
 # shellcheck disable=SC1090
 # shellcheck disable=SC2148
 
+# Require ghq
+. $DOTFILESPATH/lib/go_startup.sh
+
 # Load GHQ_ROOT path
 export GHQ_ROOT="$HOME/.ghq"
 
