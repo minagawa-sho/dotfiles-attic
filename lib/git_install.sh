@@ -14,7 +14,7 @@ brew upgrade
 git config --unset-all
 git config --add user.name 'Sho Minagawa'
 git config --add user.email minagoro0522@gmail.com
-#git config --add user.signingkey
+#git config --add user.signingkey XXXXXXXX
 git config --add alias.co checkout
 git config --add alias.st status
 git config --add alias.ci commit
