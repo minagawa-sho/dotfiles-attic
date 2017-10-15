@@ -16,4 +16,3 @@ export DOTFILESPATH="$HOME/.dotfiles"
 . $DOTFILESPATH/lib/ls_startup.sh
 . $DOTFILESPATH/lib/pip_startup.sh
 . $DOTFILESPATH/lib/pyenv_startup.sh
-. $DOTFILESPATH/lib/system_startup.sh
